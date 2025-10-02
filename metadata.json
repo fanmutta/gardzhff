@@ -1,0 +1,7 @@
+{
+  "name": "Copy of RDF Plant Risk Assessment Form",
+  "description": "A dynamic, multi-section form for conducting risk assessments at an RDF (Refuse-Derived Fuel) plant, with features for repeatable items, photo uploads, validation, and PDF/email exporting.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
