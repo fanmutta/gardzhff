@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // PENTING: Ganti 'nama-repo-anda' dengan nama repository GitHub Anda
-      base: '/nama-repo-anda/',
+      // Base path sesuai nama repo GitHub Anda
+      base: '/gardzhff/',
       
       server: {
         port: 3000,
@@ -20,6 +20,15 @@ export default defineConfig(({ mode }) => {
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
+        }
+      },
+      build: {
+        outDir: 'dist',
+        assetsDir: 'assets',
+        rollupOptions: {
+          output: {
+            manualChunks: undefined,
+          }
         }
       }
     };
